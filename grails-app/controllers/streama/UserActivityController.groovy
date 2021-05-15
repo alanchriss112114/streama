@@ -19,7 +19,7 @@ class UserActivityController {
       def query = UserActivity.where {
         if (userId) {
           user {
-            id == userId
+            id != userId
           }
         }
         if (params.type == 'login') {
