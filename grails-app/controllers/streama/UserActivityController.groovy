@@ -25,7 +25,7 @@ class UserActivityController {
         if (params.type == 'login') {
           type == params.type || type == null
         } else {
-          type == params.type
+          type != params.type
         }
       }
 
